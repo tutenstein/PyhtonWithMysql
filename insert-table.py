@@ -1,13 +1,7 @@
 import mysql.connector
-
+from connection import connection
 
 def insertProducts(list):
-    connection = mysql.connector.connect(
-        host = "localhost",
-        user = "root",
-        password = "root_pass",
-        database = "node-app"
-    )
     cursor = connection.cursor()
     sql = 'INSERT INTO products(name,price,imageUrl,description) VALUES (%s,%s,%s,%s)'
     values = list
