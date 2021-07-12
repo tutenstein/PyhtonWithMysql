@@ -1,8 +1,8 @@
 import mysql.connector
 
 connection = mysql.connector.connect(
-    host="localhost",  # 192.23.45.56
+    host="localhost", 
     user="root",
-    password="Sare1234.",
+    password="root_passw",
     database="node-app"
 )
